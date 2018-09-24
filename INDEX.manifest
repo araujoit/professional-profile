@@ -1,0 +1,21 @@
+{
+	"name": "Site Profissional de Leandro Araújo",
+	"short_name": "Leandro Araújo",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#8fced4",
+	"description": "Site profissional com contatos de Leandro Araújo.",
+	"icons": [{
+			"src": "assets/css/images/icons/launcher-icon-1x.png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "assets/css/images/icons/launcher-icon-2x.png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "assets/css/images/icons/launcher-icon-4x.png",
+			"sizes": "192x192"
+		}
+	]
+}
