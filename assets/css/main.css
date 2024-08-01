@@ -1,8 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
-/*@import url("font-awesome.min.css");*/
 
 :root {
-	/*--main-font-color: rgb(0, 0, 0);*/
 	--main-font-color: rgb(63, 63, 63);
 	--main-link-color-focus: rgb(88, 88, 88);
 	--main-link-color-hover: #000;
@@ -33,7 +31,6 @@ body {
 	background-position: 50% 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/*opacity: 0.3;*/
 	z-index: -1;
 }
 
@@ -52,11 +49,7 @@ body {
 }
 
 section {
-	padding-bottom: 10vh;
-  	padding-left: 1rem;
-	padding-top: 1rem;
-	padding-right: 1rem;
-	/*opacity: 0.3;*/
+	padding: 1rem;
 	background-color: var(--main-background-color);
 	margin: 1rem;
 }
@@ -99,13 +92,11 @@ section .title {
 }
 
 .identification .contact {
-	/*border: 1px dashed green;*/
 	padding-left: 1em;
 	margin-left: 2rem;
 	margin-right: 1rem;
 }
 
-/**/
 .identification .contact ul {
 	display: grid;
 	list-style-type: none;
@@ -133,24 +124,36 @@ section .title {
 .identification .contact ul li i > a:visited {
 	color: var(--main-link-color-visited);
 }
-/**/
 
-.experiences > .experience {
-	margin-bottom: 2rem;
+.experiences > article {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 1rem;
 }
 
 .experiences > .experience > .name {
 	font-weight: bold;
 }
 
-footer {
-	/*position: fixed;*/
-	left: 0;
-	bottom: 0;
+.academy > article {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 1rem;
+}
 
-	width: 100%;
-	background-color: var(--main-footer-background-color);
+.skills > article {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 1rem;
+}
+
+footer {
 	color: var(--main-footer-color);
+	width: fit-content;
+  	margin: 0 auto;
 }
 
 footer .contact .header {
