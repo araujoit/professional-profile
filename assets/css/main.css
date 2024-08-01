@@ -248,12 +248,19 @@ footer .copyright > span {
 		flex-direction: column;
 	}
 
+	.identification .principal img {
+		max-height: 8rem;
+		border-radius: 3rem;
+	}
+
 	.identification .principal {
 		display: block;
 	}
 
 	.identification .principal img {
 		max-height: 17vh;
+		max-height: 8rem;
+		border-radius: 3rem;
 	}
 
 	.identification .principal .me .name {
@@ -276,12 +283,15 @@ footer .copyright > span {
 /** Small mobile devices **/
 @media (min-width: 281px) and (max-width: 380px) {
 
+	
 	.identification .principal {
 		display: block;
 	}
 
 	.identification .principal img {
 		max-height: 17vh;
+		max-height: 8rem;
+		border-radius: 3rem;
 	}
 
 	.identification .principal .me .name {
