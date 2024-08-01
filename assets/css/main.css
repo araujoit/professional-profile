@@ -283,7 +283,7 @@ footer .copyright > span {
 /** iPads, Tablets **/
 @media (min-width: 481px) and  (max-width: 768px) {
 	body {
-		font-size: 1.1rem !important;
+		font-size: 12pt !important;
 	}
 	
 	footer .contact ul li i > a span {
@@ -294,7 +294,15 @@ footer .copyright > span {
 /** Small screens **/
 @media (min-width: 769px) and  (max-width: 1024px) {
 	body {
-		font-size: 1.2rem !important;
+		font-size: 15pt !important;
+	}
+
+	.identification {
+		padding: 1rem;
+	}
+
+	.identification .contact ul {
+		grid-template-columns: repeat(5, 1fr) !important;
 	}
 
 	footer .contact ul li i > a span {
@@ -305,7 +313,16 @@ footer .copyright > span {
 /** Desktops, large screens **/
 @media (min-width: 1025px) and  (max-width: 1200px) {
 	body {
-		font-size: 1.3rem !important;
+		font-size: 16pt !important;
+	}
+
+	.identification {
+		padding: 1rem;
+	}
+
+	.identification .contact ul {
+		gap: 1rem;
+		grid-template-columns: repeat(5, 1fr) !important;
 	}
 
 	.identification .principal .me .name {
@@ -324,11 +341,20 @@ footer .copyright > span {
 /** Extra large screens, TV **/
 @media (min-width: 1201px) and  (max-width: 1600px) {
 	body {
-		font-size: 1.5rem !important;
+		font-size: 16pt !important;
 	}
 
 	.fa {
 		min-width: 50px;
+	}
+
+	.identification {
+		padding: 1rem;
+	}
+
+	.identification .contact ul {
+		gap: 1rem;
+		grid-template-columns: repeat(5, 1fr) !important;
 	}
 
 	.identification .principal .me .name {
@@ -343,11 +369,20 @@ footer .copyright > span {
 /** Extra large screens, TV **/
 @media (min-width: 1601px) {
 	body {
-		font-size: 2rem !important;
+		font-size: 17pt !important;
 	}
 
 	.fa {
 		min-width: 50px;
+	}
+
+	.identification {
+		padding: 1rem;
+	}
+
+	.identification .contact ul {
+		gap: 1rem;
+		grid-template-columns: repeat(5, 1fr) !important;
 	}
 
 	.identification .principal .me .name {
