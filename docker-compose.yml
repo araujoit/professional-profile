@@ -1,9 +1,12 @@
-version: '3'
-
 services:
-  webserver:
-    image: nginx
+  website:
+    image: araujoit.github.io:latest
+    build:
+      dockerfile: ./Dockerfile
     ports:
-      - '8080:80'
-    volumes:
-      - ./:/usr/share/nginx/html
+      - 90:80
+    networks:
+      - website
+
+networks:
+  website:
