@@ -1,0 +1,11 @@
+<div class="experience">
+    <div class="name">{{ experience.business }} - <strong>{{ experience.profession }}</strong></div>
+    <span>{{ experience.period.start }} - {{ experience.period.end || 'atual' }}</span>
+    <div>{{ experience.description }}</div>
+    <div *ngIf="experience.practices.length">
+        Experiências: 
+        <ul>
+            <li *ngFor="let practice of experience.practices">{{ practice }}</li>
+        </ul>
+    </div>
+</div>

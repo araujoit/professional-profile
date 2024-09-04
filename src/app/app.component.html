@@ -20,6 +20,10 @@
         }
       </div>
       <app-social-links></app-social-links>
+
+      <section>
+        <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
+      </section>
     </div>
   </div>
 </main>
