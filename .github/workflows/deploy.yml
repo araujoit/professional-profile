@@ -27,4 +27,5 @@ jobs:
     - name: Build Angular project
       run: ng build --prod --base-href "https://araujoit.github.io/professional-profile/"
 
-    - name: npx angular-cli-ghpages --dir=dist/professional-profile
+    - name: Deploy to Github Pages
+      run: npx angular-cli-ghpages --dir=dist/professional-profile
