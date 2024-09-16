@@ -1,0 +1,17 @@
+name: Deploy Professional Profile based on angular
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    name: Deploy via angular-cli-ghpages
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run deploy
+        uses: actions/setup-node@v3
+      - run: npm ci
+      - run: npm run deploy
