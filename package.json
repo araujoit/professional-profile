@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:professional-profile": "node dist/professional-profile/server/server.mjs",
+    "build:prod": "ng build --configuration production --base-href https://araujoit.github.io/professional-profile/",
     "deploy": "ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=professional-profile"
   },
   "private": true,
