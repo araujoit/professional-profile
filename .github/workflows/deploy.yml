@@ -23,11 +23,11 @@ jobs:
 
     - name: Build Angular project
       run: npm run build
-      
+
     - name: Deploy to GitHub Pages
       uses: actions/deploy@v3
       with:
-        access_token: ${{ secrets.GITHUB_TOKEN }}
+        access_token: ${{ secrets.GH_TOKEN }}
         repository_nwo: ${{ github.repository }}
         branch: gh-pages
         folder: dist
