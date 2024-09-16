@@ -7,6 +7,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    permissions: read-all
     
     name: Deploy via angular-cli-ghpages
     steps:
