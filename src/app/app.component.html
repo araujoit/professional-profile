@@ -21,8 +21,16 @@
       </div>
       <app-social-links></app-social-links>
 
-      <section>
+      <section id="experiences">
+        <div>Work Experience</div>
+        <div class="divider" role="separator" aria-label="Divider"></div>
         <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
+      </section>
+
+      <section id="academies">
+        <div>Academy</div>
+        <div class="divider" role="separator" aria-label="Divider"></div>
+        <app-academy *ngFor="let educational of educationals" [educational]="educational"></app-academy>
       </section>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Experience } from './experience/experience.component';
+import { EducationalBackground, EducationalInstitution } from './academy/academy.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Experience } from './experience/experience.component';
 })
 export class AppComponent {
   experiences: Experience[] = [];
+  educationals: EducationalBackground[] = [];
 
   constructor() {
     this.experiences.push({
@@ -121,6 +123,33 @@ export class AppComponent {
         return 1;
       }
       return 0;
-    })
+    });
+
+    this.educationals.push(
+      {
+        institution: EducationalInstitution.FIAP,
+        name: 'Pós graduação Lato Sensu, Software Architecture',
+        period: {
+          start: new Date(2023, 7, 1),
+          end: new Date(2024, 8, 30)
+        }
+      },
+      {
+        institution: EducationalInstitution.FIAP,
+        name: 'Master of Business Administration (MBA), Big Data',
+        period: {
+          start: new Date(2015, 3, 1),
+          end: new Date(2016, 6, 1)
+        }
+      },
+      {
+        institution: EducationalInstitution.ANHANGUERA,
+        name: 'Graduação em Análise e Desenvolvimento de Sistemas',
+        period: {
+          start: new Date(2010, 2, 1),
+          end: new Date(2012, 6, 1)
+        }
+      }
+    );
   }
 }

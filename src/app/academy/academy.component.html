@@ -1,0 +1,4 @@
+<article class="academy">
+    <label>{{ educational.institution }} - <strong>{{ educational.name }}</strong></label>
+    <legend>{{ educational.period.start | date : 'MMM/yyyy' }} - {{ educational.period.end | date : 'MMM/yyyy' || 'em andamento' }}</legend>
+</article>

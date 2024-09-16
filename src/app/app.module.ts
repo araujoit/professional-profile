@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { AcademyComponent } from './academy/academy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
     SocialLinksComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AcademyComponent
   ],
   imports: [
     BrowserModule,
