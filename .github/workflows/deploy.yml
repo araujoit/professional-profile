@@ -27,5 +27,15 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Install Angular Cli Github Pages
+      run: npm i -g angular-cli-ghpages
+
+    - name: Deploy to gh pages
+      run: |
+        npx angular-cli-ghpages --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
     # - name: Deploy on Github Pages
     #   run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
