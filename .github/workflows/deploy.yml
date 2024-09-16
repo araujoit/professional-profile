@@ -28,4 +28,4 @@ jobs:
       run: npm run build:prod
 
     - name: Deploy on Github Pages
-    - run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
+      run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
