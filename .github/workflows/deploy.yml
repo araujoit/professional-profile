@@ -31,8 +31,7 @@ jobs:
       run: npm i -g angular-cli-ghpages
 
     - name: Deploy to gh pages
-      run: |
-        npx angular-cli-ghpages --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
+      run: npm run deploy
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
