@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     name: Deploy via angular-cli-ghpages
@@ -21,11 +21,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # - name: Run tests
-    #   run: npm run test
-
-    - name: Build
+    - name: Build Angular project
       run: npm run build
-
-    - name: Install Angular Cli Github Pages
-      run: npm i -g angular-cli-ghpages
+      
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy@v3
+      with:
+        access_token: ${{ secrets.GITHUB_TOKEN }}
+        repository_nwo: ${{ github.repository }}
+        branch: gh-pages
+        folder: dist
