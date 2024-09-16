@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "araujoit": {
+    "professional-profile": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/araujoit",
+            "outputPath": "dist/professional-profile",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "araujoit:build:production"
+              "buildTarget": "professional-profile:build:production"
             },
             "development": {
-              "buildTarget": "araujoit:build:development"
+              "buildTarget": "professional-profile:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "araujoit:build"
+            "buildTarget": "professional-profile:build"
           }
         },
         "test": {

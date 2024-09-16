@@ -1,5 +1,5 @@
-# araujoit.github.io
-[![pages-build-deployment](https://github.com/araujoit/araujoit.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/araujoit/araujoit.github.io/actions/workflows/pages/pages-build-deployment)
+# araujoit.github.io/professional-profile
+[![pages-build-deployment](https://github.com/araujoit/araujoit.github.io/professional-profile/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/araujoit/araujoit.github.io/professional-profile/actions/workflows/pages/pages-build-deployment)
 
 Profissional website
 

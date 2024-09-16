@@ -1,5 +1,5 @@
 {
-  "name": "araujoit",
+  "name": "professional-profile",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:araujoit": "node dist/araujoit/server/server.mjs",
-    "deploy": "ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit"
+    "serve:ssr:professional-profile": "node dist/professional-profile/server/server.mjs",
+    "deploy": "ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=professional-profile"
   },
   "private": true,
   "dependencies": {

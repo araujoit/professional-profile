@@ -1,6 +1,6 @@
 services:
   website:
-    image: araujoit.github.io:latest
+    image: araujoit.github.io/professional-profile:latest
     build:
       dockerfile: ./Dockerfile
     ports:
