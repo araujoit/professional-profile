@@ -10,9 +10,22 @@ jobs:
     
     name: Deploy via angular-cli-ghpages
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
       with:
-        node-version: 18
-    - run: npm ci
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm run test:headless
+
+    - name: Build
+      run: npm run build:prod
+
+    - name: Deploy on Github Pages
     - run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
