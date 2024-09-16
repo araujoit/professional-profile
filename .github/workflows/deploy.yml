@@ -5,8 +5,10 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    
+    name: Deploy via angular-cli-ghpages
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -20,15 +22,17 @@ jobs:
       run: npm install
 
     # - name: Run tests
-    #   run: npm run test:headless
+    #   run: npm run test
 
     - name: Build
       run: npm run build
 
-    - name: Deploy
+    - name: Install Angular Cli Github Pages
+      run: npm i -g angular-cli-ghpages
+
+    - name: Deploy to gh pages
       if: success()
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        publish_dir: dist/angular-github-actions
-        enable_jekyll: true
+      run: npm run deploy
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
