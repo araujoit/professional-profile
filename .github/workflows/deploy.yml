@@ -15,4 +15,4 @@ jobs:
       with:
         node-version: 18
     - run: npm ci
-    - run: npm run deploy
+    - run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=araujoit
