@@ -21,5 +21,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Install Angular CLI gh-pages
+      run: npm i angular-cli-ghpages --save-dev
+
     - name: Build Angular project
-      run: npm run build
+      run: ng build --prod --base-href "https://araujoit.github.io/professional-profile/"
+
+    - name: npx angular-cli-ghpages --dir=dist/professional-profile
