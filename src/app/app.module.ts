@@ -7,6 +7,7 @@ import { ItemComponent } from './item/item.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AcademyComponent } from './academy/academy.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AcademyComponent } from './academy/academy.component';
     ItemComponent,
     SocialLinksComponent,
     ExperienceComponent,
-    AcademyComponent
+    AcademyComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

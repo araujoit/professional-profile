@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Experience } from './experience/experience.component';
 import { EducationalBackground, EducationalInstitution } from './academy/academy.component';
+import { Skill } from './skill/skill.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { EducationalBackground, EducationalInstitution } from './academy/academy
 export class AppComponent {
   experiences: Experience[] = [];
   educationals: EducationalBackground[] = [];
+  skills: Skill[] = [];
 
   constructor() {
     this.experiences.push({
@@ -149,6 +151,25 @@ export class AppComponent {
           start: new Date(2010, 2, 1),
           end: new Date(2012, 6, 1)
         }
+      }
+    );
+
+    this.skills.push(
+      {
+        name: 'Teamwork and leadership',
+        description: 'Product-oriented development soft skills, with great communication with peers, leadership and clients.'
+      },
+      {
+        name: 'Languages and Frameworks',
+        description: 'Javascript + Typescript, Node.js, HTML5, SASS, Angular v1, Angular 2+, React, Vue.js, jQuery, C#, .Net, Python, Django, Ruby, Ruby on Rails, Elixir, Bash'
+      },
+      {
+        name: 'Databases',
+        description: 'SQL such as PostgreSQL, MySQL, SQLite, MSSQL and Oracle; NoSQL as AWS DynamoDB, MongoDB, Redis'
+      },
+      {
+        name: 'Infrastructure',
+        description: 'AWS, Google Cloud, Firebase, Heroku, CircleCI, Codefresh, Jenkins'
       }
     );
   }

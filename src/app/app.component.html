@@ -32,6 +32,12 @@
         <div class="divider" role="separator" aria-label="Divider"></div>
         <app-academy *ngFor="let educational of educationals" [educational]="educational"></app-academy>
       </section>
+
+      <section id="app-skill">
+        <div>Skills and Tools</div>
+        <div class="divider" role="separator" aria-label="Divider"></div>
+        <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+      </section>
     </div>
   </div>
 </main>
