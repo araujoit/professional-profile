@@ -37,4 +37,4 @@ jobs:
         access_token: ${{ secrets.GH_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=professional-profile
+      run: ng deploy --build-target=professional-profile:build:production --repo=https://github.com/araujoit/professional-profile.git --name=professional-profile
