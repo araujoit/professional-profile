@@ -35,4 +35,5 @@ jobs:
     - name: Deploy to Github Pages
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: ng deploy --build-target=professional-profile:build:production --repo=https://github.com/araujoit/professional-profile.git --name="araujoit" --email=leandroaraujo_sp@hotmail.com
