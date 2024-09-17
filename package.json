@@ -9,7 +9,7 @@
     "test": "ng test",
     "serve:ssr:professional-profile": "node dist/professional-profile/server/server.mjs",
     "build:prod": "ng build --configuration production --base-href https://araujoit.github.io/professional-profile/",
-    "deploy": "ng deploy --repo=git@github.com:araujoit/professional-profile.git --name=professional-profile"
+    "deploy": "ng deploy --build-target=professional-profile:build:production --repo=https://github.com/araujoit/professional-profile.git --name=araujoit --email=leandroaraujo_sp@hotmail.com"
   },
   "private": true,
   "dependencies": {
