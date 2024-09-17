@@ -1,39 +1,33 @@
 <main class="main">
   <div class="content">
     <div class="left-side">
-      <h1>Leandro Araújo</h1>
-      <legend>Software Engineer</legend>
+      <div id="identification">
+        <a href="/">
+          <h1>Leandro Araújo</h1>
+        </a>
+        <legend>Software Engineer</legend>
+      </div>
+
+      <app-social-links></app-social-links>
     </div>
 
     <div class="divider" role="separator" aria-label="Divider"></div>
 
     <div class="right-side">
-      <div class="pill-group">
-        @for (item of [
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
-          <app-item [item]="item"></app-item>
-        }
-      </div>
-      <app-social-links></app-social-links>
-
       <section id="experiences">
-        <div>Work Experience</div>
+        <div class="second-title">Work Experience</div>
         <div class="divider" role="separator" aria-label="Divider"></div>
         <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
       </section>
 
       <section id="academies">
-        <div>Academy</div>
+        <div class="second-title">Academy</div>
         <div class="divider" role="separator" aria-label="Divider"></div>
         <app-academy *ngFor="let educational of educationals" [educational]="educational"></app-academy>
       </section>
 
-      <section id="app-skill">
-        <div>Skills and Tools</div>
+      <section id="skills-and-tools">
+        <div class="second-title">Skills and Tools</div>
         <div class="divider" role="separator" aria-label="Divider"></div>
         <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
       </section>
