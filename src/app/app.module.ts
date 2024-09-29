@@ -7,6 +7,7 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AcademyComponent } from './academy/academy.component';
 import { SkillComponent } from './skill/skill.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SkillComponent } from './skill/skill.component';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
