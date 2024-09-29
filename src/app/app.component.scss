@@ -36,21 +36,47 @@
 
 .left-side {
   #identification {
+    text-align: center;
+
     img {
       max-height: 10rem;
       border-radius: 3rem;
     }
+
     a {
       cursor: text;
       text-decoration: none;
+
+      span {
+        text-decoration: none;
+        font-size: xx-large;
+      }
+
+      :visited, :active, :hover, :link {
+        color: black;
+      }
     }
+
+    legend {
+      font-size: large;
+      text-align: center;
+    }
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .menu {
+    text-align: center;
+    margin-top: 50vh;
   }
 }
 
 .right-side {
   overflow-y: scroll; 
   max-height: 100vh;
-  
+
   mat-card {
     margin-bottom: 2em;
   }
