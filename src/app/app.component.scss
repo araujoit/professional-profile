@@ -48,6 +48,9 @@
 }
 
 .right-side {
+  overflow-y: scroll; 
+  max-height: 100vh;
+  
   mat-card {
     margin-bottom: 2em;
   }
