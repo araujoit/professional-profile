@@ -1,11 +1,15 @@
-<div class="experience">
-    <div class="name">{{ experience.business }} - <strong>{{ experience.profession }}</strong></div>
-    <span>{{ experience.period.start }} - {{ experience.period.end || 'atual' }}</span>
-    <div>{{ experience.description }}</div>
-    <div *ngIf="experience.practices.length">
-        Experiências: 
-        <ul>
-            <li *ngFor="let practice of experience.practices">{{ practice }}</li>
-        </ul>
-    </div>
-</div>
+<mat-card class="experience" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>{{ experience.business }} - <strong>{{ experience.profession }}</strong></mat-card-title>
+      <mat-card-subtitle>{{ experience.period.start }} - {{ experience.period.end || 'atual' }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div>{{ experience.description }}</div>
+        <div *ngIf="experience.practices.length">
+            Experiências: 
+            <ul>
+                <li *ngFor="let practice of experience.practices">{{ practice }}</li>
+            </ul>
+        </div>
+    </mat-card-content>
+</mat-card>

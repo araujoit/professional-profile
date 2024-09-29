@@ -7,6 +7,7 @@
           <h1>Leandro Araújo</h1>
         </a>
         <legend>Software Engineer</legend>
+        <button mat-flat-button>Flat Button</button>
       </div>
 
       <app-social-links></app-social-links>
@@ -15,23 +16,32 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     
     <div class="right-side">
-      <section id="experiences">
-        <div class="second-title">Work Experience</div>
-        <div class="divider" role="separator" aria-label="Divider"></div>
-        <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
-      </section>
+      <mat-card id="experiences" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title># Work Experience</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
+        </mat-card-content>
+      </mat-card>
 
-      <section id="academies">
-        <div class="second-title">Academy</div>
-        <div class="divider" role="separator" aria-label="Divider"></div>
-        <app-academy *ngFor="let educational of educationals" [educational]="educational"></app-academy>
-      </section>
+      <mat-card id="academies" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title># Academy</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-academy *ngFor="let educational of educationals" [educational]="educational"></app-academy>
+        </mat-card-content>
+      </mat-card>
 
-      <section id="skills-and-tools">
-        <div class="second-title">Skills and Tools</div>
-        <div class="divider" role="separator" aria-label="Divider"></div>
-        <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
-      </section>
+      <mat-card id="skills-and-tools" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title># Skills and Tools</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 </main>
